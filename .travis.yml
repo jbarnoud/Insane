@@ -9,6 +9,14 @@ env:
     matrix:
         - BUILD="test"
         - BUILD="package"
+matrix:
+    exclude:
+        - python: 3.4
+          BUILD="package"
+        - python: 3.5
+          BUILD="package"
+        - python: nightly
+          BUILD="package"
 install:
     - |
         if [[ $BUILD == 'test' ]]; \
