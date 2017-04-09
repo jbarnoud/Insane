@@ -99,6 +99,17 @@ lipidsa.update({      # 1   2   3   4   5   6   7   8   9  10  11  12  13  14  1
   "DSDG.o": (moltype, "C61 C41 C11 C62 C42 C12 GL1 GL2 C1A C2A C3A C4A C5A  -  C1B C2B C3B C4B C5B  - "),
   "DSSQ.o": (moltype, " -   -   S6 C6   C4 C1  GL1 GL2 C1A C2A C3A C4A C5A  -  C1B C2B C3B C4B C5B  - "),
 })
+moltype = "alcohol"
+lipidsx[moltype] = (    0, .5,  0,  0, .5,  0, .1, .5,  0,  0,  0,  0,  0,  0,  1,  1,  1,  1,  1,  1)
+lipidsy[moltype] = (    0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0,  0)
+lipidsz[moltype] = (   10,  9,  9,  8,  8,  7,  6,  6,  5,  4,  3,  2,  1,  0,  5,  4,  3,  2,  1,  0)
+lipidsa.update({      # 1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20
+## Phospholipids
+## Alcohols
+     "OCO": (moltype, " -   -   -   -   -   -   P1  -  C1   -   -   -   -   -   -   -   -   -   -   - "),
+     "DCO": (moltype, " -   -   -   -   -   -   P1  -  C1  C1   -   -   -   -   -   -   -   -   -   - "),
+     "HCO": (moltype, " -   -   -   -   -   -   P1  -  C1  C1  C1   -   -   -   -   -   -   -   -   - "),
+})
 
 
 # HII fix for PI templates and new templates PI(s) with diffrent tails, PO-PIP1(3) and POPIP2(4, 5)
